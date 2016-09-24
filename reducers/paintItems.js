@@ -3,7 +3,8 @@ import drawingTypes from "../actions/drawingTypes"
 const {
   DRAW_CIRCLE,
   DRAW_RECTANGLE,
-  DRAW_SQUARE
+  DRAW_SQUARE,
+  CLEAR_PAINT
 } = drawingTypes
 
 
@@ -47,6 +48,8 @@ export default function paintItems (state=[], action) {
           color: action.color
         }
       ]
+    case CLEAR_PAINT:
+      return []
     default:
       return state
   }

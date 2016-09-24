@@ -7,7 +7,8 @@
 const {
   DRAW_SQUARE,
   DRAW_CIRCLE,
-  DRAW_RECTANGLE
+  DRAW_RECTANGLE,
+  CLEAR_PAINT
 } = drawingTypes
 
 export function circle (x, y, radius, color="black") {
@@ -43,5 +44,11 @@ export function selectColor (color="#00FF00") {
   return {
     type: "SELECT_COLOR",
     color
+  }
+}
+
+export function clearPaint () {
+  return {
+    type: CLEAR_PAINT
   }
 }

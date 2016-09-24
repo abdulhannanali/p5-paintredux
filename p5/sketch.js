@@ -18,7 +18,6 @@ export default function reduxSketch (store) {
         } = mouseEvent
 
         store.dispatch(circle(clientX, clientY, 10, color))
-        console.log(store.getState())
       })
 
 
@@ -30,6 +29,8 @@ export default function reduxSketch (store) {
     }
 
     p.draw = () => {
+      p.clear()
+
       var paintItems = store.getState().paintItems
 
       paintItems.forEach(function (item, index, array) {
