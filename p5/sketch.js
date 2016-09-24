@@ -25,7 +25,7 @@ export default function reduxSketch (store) {
       colorPicker.onchange =  function (event) {
           store.dispatch(selectColor(event.target.value))
           console.log("Color changed to " + event.target.value)
-      })
+      }
 
     }
 
