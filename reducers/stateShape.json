@@ -1,0 +1,25 @@
+/*
+ * This file refers to the state shape of our state data
+ * which will be finally outputted by the reducers
+ * We'll be using standard javascript objects for this purpose
+ */
+
+
+// This paint contain an array of every single shape drawn on the board alonog with it's
+// Type and different important data necessary
+{
+  "paint": [
+    {
+      "x": 3,
+      "y": 4,
+      "type": "dot",
+      "size": 10
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "type": "dot",
+      "size": 5
+    }
+  ]
+}
